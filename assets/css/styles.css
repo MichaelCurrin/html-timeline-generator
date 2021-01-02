@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+body {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* Timeline circles. */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #aaa;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Adjust circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+/* Arrows for the left container */
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.content {
+    padding: 5px 25px;
+    background-color: white;
+    position: relative;
+    border: 10px solid lightgray;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime on the left. */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers. */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Point arrows left. */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Adjust circles. */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+.blue {
+    border-color: #39f;
+}
+
+.green {
+    border-color: green;
+}
+
+.purple {
+    border-color: purple;
+}
+
+.orange {
+    border-color: darkorange;
+}
+
+.red {
+    border-color: #e11;
+}
