@@ -5,7 +5,12 @@
 [![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 
-## How to create a timeline
+## Preview
+
+![Basic](/basic.png)
+
+
+## How to create your timeline
 
 Open the web page.
 
@@ -13,9 +18,20 @@ Add a few events with the form - no coding needed.
 
 See your timeline generated on the page.
 
-Take a screenshot of the results. If you'd have to scroll, use your browser's export functionality to save the whole page.
+Take a screenshot of the results.
 
-Based on this [CSS Timeline](https://www.w3schools.com/howto/howto_css_timeline.asp) tutorial.
+You can use your browser's functionality to get a full page screenshot.
+
+- Firefox:
+    1. Right-click on the page.
+    2. Click _Take screenshot_
+    3. Select _Full page_.
+    4. The image will be saved to Downloads.
+
+
+## Credits
+
+The timeline HTML and CSS in this project is based on this [CSS Timeline](https://www.w3schools.com/howto/howto_css_timeline.asp) tutorial.
 
 
 ## License
