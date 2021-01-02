@@ -4,15 +4,22 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/html-timeline-generator?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/html-timeline-generator/releases/)
 [![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license)
 
+[![dependency - preact](https://img.shields.io/badge/preact-latest-blue)](https://www.npmjs.com/package/preact)
 
 ## Preview
 
 ![Basic](/basic.png)
 
+<div align="center">
+
+[![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/html-timeline-generator/)
+
+</div>
+
 
 ## How to create your timeline
 
-Open the web page.
+Open the site linked above.
 
 Add a few events with the form - no coding needed.
 
